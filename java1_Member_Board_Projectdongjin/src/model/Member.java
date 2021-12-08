@@ -2,19 +2,20 @@ package model;
 
 public class Member {
 
+
 	// 1. 필드 
 	private String id;
-		// private : 
+		// private : 회원들의 정보 이므로 유출되지않게 private 를 사용해야한다
 	private String password;
 	private String name;
 	private String email;
 	private int point;
 	
 	// 2. 생성자 : 생성자를 사용하는 이유?? 
-	public Member() {
+	public Member() {   //생성자는 클래스와 같은이름쓰고 리턴값안준다 다른 곳에서 new 객체생성시 호출된다
 	
 	}
-	public Member(String id, String password, String name, String email, int point) {
+	public Member(String id, String password, String name, String email, int point) {  // 생성자에서 다른 생성자를 호출할떄는 this 를 사용한다
 		this.id = id;
 		this.password = password;
 		this.name = name;

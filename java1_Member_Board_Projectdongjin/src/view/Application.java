@@ -1,5 +1,6 @@
 package view;
 
+import java.lang.reflect.Member;
 import java.util.Scanner;
 
 import controller.MemberController;
@@ -41,18 +42,21 @@ public class Application {
 					System.out.println("비밀번호입력 :"); String password = scanner.next();
 					System.out.println("이름입력 :"); String name = scanner.next();
 					System.out.println("이메일입력 :"); String email = scanner.next();
-					boolean result = MemberController.signup
-				
+					
+					Member member = new Member(id, password, name, email, ch);
+					boolean result =  MemberController.signup(member);
+					if(result) {
+						System.err.println(" [알림] : 회원가입 성공 ");
+					}else {
+						System.err.println(" [알림] : 회원가입 실패 ");
+					}
+					System.out.println("+++++++++++++++++++++++++++++++++++++++");
 				}
-				
 		}
 		
 	}//me
 
 	
 	
-	private static void membermenu(String id) {
-		// TODO Auto-generated method stub
-		
-	}
+	
 }//ce

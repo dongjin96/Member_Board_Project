@@ -12,10 +12,10 @@ public class Board {
 	private String date;
 	private int view;
 	// 하나의 게시물의 여러개 댓글 저장하기 위한 
-	private ArrayList<Reply> replylist;  // 댓글 리스트 메모리할당;\
+	private ArrayList<Reply> replylist;  // 댓글 리스트 메모리할당한다
 	
 	// 2. 생성자 
-	public Board() { // 빈생성자 : 1.메소드호출용시 2. 빈 객체 생성후 추후에 필드 값 대입 
+	public Board() { // 빈생성자 : 메소드 호출시 또는 나중에 사용할수있으니 ,,필요
 		
 	}
 	// 게시물 등록시 사용되는 생성자 
