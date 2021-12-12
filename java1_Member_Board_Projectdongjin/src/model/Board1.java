@@ -3,7 +3,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Board {
+public class Board1 {
 
 	// 1. 필드 
 	private String title;
@@ -12,14 +12,14 @@ public class Board {
 	private String date;
 	private int view;
 	// 하나의 게시물의 여러개 댓글 저장하기 위한 
-	private ArrayList<Reply> replylist;  // 댓글 리스트 메모리할당한다
+	private ArrayList<Reply1> replylist;  // 댓글 리스트 메모리할당한다
 	
 	// 2. 생성자 
-	public Board() { // 빈생성자 : 메소드 호출시 또는 나중에 사용할수있으니 ,,필요
+	public Board1() { // 빈생성자 : 메소드 호출시 또는 나중에 사용할수있으니 ,,필요
 		
 	}
 	// 게시물 등록시 사용되는 생성자 
-	public Board(String title, String contents, String writer) {
+	public Board1(String title, String contents, String writer) {
 		
 		this.title = title;
 		this.contents = contents;
@@ -33,7 +33,7 @@ public class Board {
 		this.replylist = new ArrayList<>(); 
 	}
 	// 파일로드시 사용되는 생성자 
-	public Board(String title, String contents, String writer, String date, int view) {
+	public Board1(String title, String contents, String writer, String date, int view) {
 		this.title = title;
 		this.contents = contents;
 		this.writer = writer;
@@ -73,10 +73,10 @@ public class Board {
 	public void setView(int view) {
 		this.view = view;
 	}
-	public ArrayList<Reply> getReplylist() {
+	public ArrayList<Reply1> getReplylist() {
 		return replylist;
 	}
-	public void setReplylist(ArrayList<Reply> replylist) {
+	public void setReplylist(ArrayList<Reply1> replylist) {
 		this.replylist = replylist;
 	}
 	
