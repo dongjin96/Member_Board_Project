@@ -161,7 +161,7 @@ public class Application {
 			}
 			if(ch==2) {
 				System.out.println(":게시물번호 :"); int index = scanner.nextInt();
-				Board1 board1 = BoardController.detail(index-1); // 왜 일을 깍는지----------------------
+				Board1 board1 = BoardController.detail(index-1); 
 				System.out.println("===========게시물 상세보기=================");
 				if(board1 ==null) {
 					System.out.println("선택한 게시물은 존재하지않습니다");
@@ -199,8 +199,15 @@ public class Application {
 						}
 					}
 					if( ch2 == 2 ) { return; }
-					if( ch2 == 3 ) {} // 게시물 삭제 아마 디비 로 사용하면 delete 해서 할수있어서 안한듯!!
-					if( ch2 == 4 ) {}// 게시물 수정
+					if( ch2 == 3 ) {
+						System.out.println(":게시물번호 :"); int index2 = scanner.nextInt();
+						Board1 board2 = BoardController.detail(index2-1);
+						BoardController.delete(index2);} // 게시물 삭제 아마 디비 로 사용하면 delete 해서 할수있어서 안한듯!!
+					if( ch2 == 4 ) {
+						System.out.println(":게시물 번호 :"); int index3 = scanner.nextInt();
+						Board1 board12 = BoardController.detail(index3-1);
+						
+					}// 게시물 수정
 				}
 			}
 			if(ch==3) {

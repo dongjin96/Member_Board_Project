@@ -15,9 +15,9 @@ public class File2 {
 	// 필드 
 		
 	private static String memberpath= // 회원정보를 저장하는경로
-	"C:/Users/오동진/Desktop/Member_Board_Project/java1_Member_Board_Projectdongjin/src/database/memberlist.txt";
+	"C:\\Users\\오동진\\git\\Member_Board_Project\\java1_Member_Board_Projectdongjin\\src\\database/memberlist.txt";
 	private static String boardpath=
-			"C:/Users/오동진/Desktop/Member_Board_Project/java1_Member_Board_Projectdongjin/src/database/boardlist.txt/";
+			"C:\\Users\\오동진\\git\\Member_Board_Project\\java1_Member_Board_Projectdongjin\\src\\database/boardlist.txt/";
 	
 	
 	

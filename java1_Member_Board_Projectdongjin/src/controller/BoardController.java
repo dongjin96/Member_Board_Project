@@ -34,10 +34,23 @@ public class BoardController {
 		}
 		// 게시물 삭제 메소드 
 		public static boolean delete( int index ) {
+			try {
+				Board1 board1 = boardlist.remove(index);
+				File2.filesave(index);
+				return true;
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
 			return true;
 		}
 		// 게시물 수정 메소드 
 		public static boolean update( int index , String title , String contents ) {
+			
+			try {
+				
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
 			return true;
 		}
 		
